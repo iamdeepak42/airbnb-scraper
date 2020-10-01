@@ -387,7 +387,7 @@ class BnbSpider(scrapy.Spider):
             bedrooms=self._parse_bedrooms(listing),
             beds=listing.get('beds', re.search(r'\d+', listing['bed_label'])[0]),
             business_travel_ready=listing['is_business_travel_ready'],
-            city=listing.get('localized_city', self._geography['city']),
+            city=listing.get('localized_city', self._geography.get('city','')),
             country=self._geography['country'],
             country_code=listing.get('country_code', self._geography['country_code']),
             description=listing['sectioned_description']['description'],
