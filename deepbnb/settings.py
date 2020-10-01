@@ -35,7 +35,7 @@ AIRBNB_API_KEY = 'd306zoyjsyarp7ifhu67rjxn52tv0t20'
 USER_AGENT = 'deepbnb (+https://digitalengineering.io)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # https://docs.python.org/3/library/webbrowser.html
 # Open results in web browser
